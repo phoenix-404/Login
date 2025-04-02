@@ -86,18 +86,19 @@ form input{
     font: inherit;
     border-radius: 0 10px 10px 0;
     border: none;
+    border-left: none;
     background-color: var(--input-color);
     transition: 150ms ease;
 }
 form input:hover{
     border: 2px solid var(--accent-color);
 }
-form button:focus{
+form input:focus{
     outline: none;
-    background-color: rgb(92, 157, 168);
+    border-color: rgb(92, 157, 168);
 }
 div:has(input:focus) > label{
-    background-color: rgb(231, 231, 167);
+    background-color: rgb(167, 230, 231);
 }
 form button{
     margin-top: 10px;
@@ -112,8 +113,13 @@ form button{
     cursor: pointer;
     transition: 150ms ease;
 }
-
-
+form button:hover{
+    background-color: rgb(8, 139, 196);
+}
+form button:focus{
+    outline: none;
+    background-color: rgb(41, 67, 76);
+}
 a{
     text-decoration: none;
     color: var(--accent-color);
@@ -128,7 +134,7 @@ a:hover{
     }   
 }
 .incorrent label{
-    background-color: #fd6254;
+    background-color: #e02b1b;
 }
 form div.incorrent input{
     border-color: #fd6254;
